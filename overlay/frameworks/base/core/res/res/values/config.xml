@@ -425,4 +425,11 @@
          user-set value if toggled by settings so the "Transition animation scale" setting
          should also be hidden if intended to be permanent. -->
     <item name="config_appTransitionAnimationDurationScaleDefault" format="float" type="dimen">0.8</item>
+
+    <!-- Controls the navigation bar interaction mode:
+         0: 3 button mode (back, home, recent apps)
+         1: 2 button mode (back, home)
+         2: gestures mode (full screen gesture navigation)
+    -->
+    <integer name="config_navBarInteractionMode">2</integer>
 </resources>
