@@ -29,9 +29,6 @@ PRODUCT_PACKAGES += \
 # Dolby
 TARGET_USES_DOLBY := true
 
-PRODUCT_PACKAGES += \
-    DSPVolumeSynchronizer
-
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
