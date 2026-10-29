@@ -75,5 +75,8 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/properties/recovery.prop:$(TARGET_COPY_OUT_RECOVERY)/root/recovery.prop
 
+# Google Camera
+$(call inherit-product-if-exists, vendor/GCam_sweet2/aosp/device_sweet2_gcam.mk)
+
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sweet2/sweet2-vendor.mk)
