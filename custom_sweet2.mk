@@ -26,13 +26,13 @@ PRODUCT_NAME := custom_sweet2
 PRODUCT_SYSTEM_DEVICE := sweet
 PRODUCT_SYSTEM_NAME := sweet_global2
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
-# Permanent Debloat (SIM Toolkit, Aperture, Personal Safety, FM Radio)
+# Permanent Debloat (SIM Toolkit, Aperture, Personal Safety, FM Radio, Play Auto Install)
 PRODUCT_PACKAGES_REMOVE += \
     Stk \
     Aperture \
@@ -43,4 +43,7 @@ PRODUCT_PACKAGES_REMOVE += \
     EmergencyInfoGoogle \
     FMRadio \
     FM2 \
-    com.caf.fmradio
+    com.caf.fmradio \
+    GooglePartnerSetup \
+    PartnerSetup \
+    PlayAutoInstallConfig
